@@ -1,0 +1,109 @@
+{
+  "name": "google-twingate",
+  "types": {
+    "google-twingate:connector:TwingateConnector": {
+      "description": "Describes the connector instance",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of the connector."
+        },
+        "zone": {
+          "type": "string",
+          "description": "GCP availability zone."
+        },
+        "accessToken": {
+          "type": "string",
+          "description": "Access token from Twingate."
+        },
+        "refreshToken": {
+          "type": "string",
+          "description": "Refresh token from Twingate."
+        }
+      },
+      "type": "object"
+    }
+  },
+  "resources": {
+    "google-twingate:connector:TwingateRegion": {
+      "isComponent": true,
+      "inputProperties": {
+        "project": {
+          "type": "string",
+          "description": "The GCP project id."
+        },
+        "network": {
+          "type": "string",
+          "description": "The GCP network id."
+        },
+        "region": {
+          "type": "string",
+          "description": "The GCP region."
+        },
+        "cidr": {
+          "type": "string",
+          "description": "CIDR of the created subnetwork."
+        },
+        "connectors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/types/google-twingate:connector:TwingateConnector"
+          },
+          "description": "CIDR of the created subnetwork."
+        }
+      },
+      "requiredInputs": ["project", "network", "region", "cidr", "connectors"],
+      "properties": {
+        "subnetwork": {
+          "$ref": "/google-native/v0.19.0/schema.json#/resources/google-native:compute%2Fv1:Subnetwork",
+          "description": "The subnetwork resource."
+        },
+        "instances": {
+          "type": "array",
+          "items": {
+            "$ref": "/google-native/v0.19.0/schema.json#/resources/google-native:compute%2Fv1:Instance"
+          },
+          "description": "The subnetwork resource."
+        },
+        "addresses": {
+          "type": "array",
+          "items": {
+            "$ref": "/google-native/v0.19.0/schema.json#/resources/google-native:compute%2Fv1:Address"
+          },
+          "description": "The subnetwork resource."
+        }
+      },
+      "required": ["subnetwork", "instances", "addresses"]
+    }
+  },
+  "language": {
+    "csharp": {
+      "packageReferences": {
+        "Pulumi": "3.*",
+        "Pulumi.GoogleNative": "0.19.*"
+      },
+      "respectSchemaVersion": true
+    },
+    "go": {
+      "generateResourceContainerTypes": true,
+      "importBasePath": "github.com/activatedio/pulumi-google-twingate/sdk/go/google-twingate",
+      "respectSchemaVersion": true
+    },
+    "nodejs": {
+      "dependencies": {
+        "@pulumi/google-native": "^0.19.0"
+      },
+      "devDependencies": {
+        "typescript": "^3.7.0"
+      },
+      "respectSchemaVersion": true
+    },
+    "python": {
+      "requires": {
+        "pulumi": ">=3.0.0,<4.0.0",
+        "pulumi-google-native": ">=0.19.0,<1.0.0"
+      },
+      "respectSchemaVersion": true
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "version": "${VERSION}",
+  "bin": "bin/index.js",
+  "scripts": {
+    "prettier": "prettier --write ."
+  },
+  "dependencies": {
+    "@pulumi/google-native": "^0.19.0",
+    "@pulumi/pulumi": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^10.0.0",
+    "pkg": "^5.6.0",
+    "typescript": "^4.0.0",
+    "prettier": "2.5.1"
+  }
+}

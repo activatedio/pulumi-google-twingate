@@ -1,0 +1,20 @@
+{
+    "name": "@pulumi/google-twingate",
+    "version": "${VERSION}",
+    "scripts": {
+        "build": "tsc",
+        "install": "node scripts/install-pulumi-plugin.js resource google-twingate ${VERSION}"
+    },
+    "dependencies": {
+        "@pulumi/google-native": "^0.19.0"
+    },
+    "devDependencies": {
+        "typescript": "^3.7.0"
+    },
+    "peerDependencies": {
+        "@pulumi/pulumi": "latest"
+    },
+    "pulumi": {
+        "resource": true
+    }
+}

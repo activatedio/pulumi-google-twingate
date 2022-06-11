@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "prettier": "prettier --write ."
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.28.6",
+    "nexe": "^4.0.0-beta.18",
+    "prettier": "2.5.1"
+  }
+}
