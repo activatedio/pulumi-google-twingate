@@ -9,45 +9,8 @@ More information about Twingate can be found at http://twingate.com
 
 ## Installing
 
-This package is available in many languages in the standard packaging formats.
+TODO: Installation instructions pending deployment to public registries.
 
-### Node.js (JavaScript/TypeScript)
-
-To use from JavaScript or TypeScript in Node.js, install using either `npm`:
-
-```bash
-npm install @activatedio/pulumi-google-twingate
-```
-
-or `yarn`:
-
-```bash
-yarn add @activatedio/pulumi-google-twingate
-```
-
-### Python
-
-To use from Python, install using `pip`:
-
-```bash
-pip install activatedio_pulumi_google_twingate
-```
-
-### Go
-
-To use from Go, use `go get` to grab the latest version of the library
-
-```bash
-go get github.com/activatedio/pulumi-google-twingate/sdk
-```
-
-### .NET
-
-To use from .NET, install using `dotnet add package`:
-
-```bash
-dotnet add package Activatedio.Pulumi.GoogleTwingate
-```
 
 ## Building
 
