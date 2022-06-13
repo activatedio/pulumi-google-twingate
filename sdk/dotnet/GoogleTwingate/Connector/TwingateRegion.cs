@@ -6,8 +6,9 @@ using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
+using Pulumi;
 
-namespace Pulumi.GoogleTwingate.Connector
+namespace Activatedio.Pulumi.GoogleTwingate.Connector
 {
     [GoogleTwingateResourceType("google-twingate:connector:TwingateRegion")]
     public partial class TwingateRegion : Pulumi.ComponentResource

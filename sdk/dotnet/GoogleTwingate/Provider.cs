@@ -6,8 +6,9 @@ using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
+using Pulumi;
 
-namespace Pulumi.GoogleTwingate
+namespace Activatedio.Pulumi.GoogleTwingate
 {
     [GoogleTwingateResourceType("pulumi:providers:google-twingate")]
     public partial class Provider : Pulumi.ProviderResource
