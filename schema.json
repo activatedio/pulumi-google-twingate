@@ -83,7 +83,7 @@
         "Pulumi.GoogleNative": "0.19.*"
       },
       "respectSchemaVersion": true,
-      "rootNamespace": "Activatedio.Pulumi"
+      "rootNamespace": "Activatedio"
     },
     "go": {
       "generateResourceContainerTypes": true,

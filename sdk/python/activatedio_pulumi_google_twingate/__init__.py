@@ -9,10 +9,10 @@ from .provider import *
 
 # Make subpackages available:
 if typing.TYPE_CHECKING:
-    import pulumi_google_twingate.connector as __connector
+    import activatedio_pulumi_google_twingate.connector as __connector
     connector = __connector
 else:
-    connector = _utilities.lazy_import('pulumi_google_twingate.connector')
+    connector = _utilities.lazy_import('activatedio_pulumi_google_twingate.connector')
 
 _utilities.register(
     resource_modules="""
@@ -20,7 +20,7 @@ _utilities.register(
  {
   "pkg": "google-twingate",
   "mod": "connector",
-  "fqn": "pulumi_google_twingate.connector",
+  "fqn": "activatedio_pulumi_google_twingate.connector",
   "classes": {
    "google-twingate:connector:TwingateRegion": "TwingateRegion"
   }
@@ -32,7 +32,7 @@ _utilities.register(
  {
   "pkg": "google-twingate",
   "token": "pulumi:providers:google-twingate",
-  "fqn": "pulumi_google_twingate",
+  "fqn": "activatedio_pulumi_google_twingate",
   "class": "Provider"
  }
 ]

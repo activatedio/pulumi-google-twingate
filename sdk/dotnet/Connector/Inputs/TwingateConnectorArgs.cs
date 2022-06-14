@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Pulumi.Serialization;
 using Pulumi;
 
-namespace Activatedio.Pulumi.GoogleTwingate.Connector.Inputs
+namespace Activatedio.GoogleTwingate.Connector.Inputs
 {
 
     /// <summary>

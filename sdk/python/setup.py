@@ -37,7 +37,7 @@ def readme():
         return "google-twingate Pulumi Package - Development Version"
 
 
-setup(name='pulumi_google_twingate',
+setup(name='activatedio_pulumi_google_twingate',
       version=VERSION,
       long_description=readme(),
       long_description_content_type='text/markdown',
@@ -46,7 +46,7 @@ setup(name='pulumi_google_twingate',
       },
       packages=find_packages(),
       package_data={
-          'pulumi_google_twingate': [
+          'activatedio_pulumi_google_twingate': [
               'py.typed',
               'pulumi-plugin.json',
           ]

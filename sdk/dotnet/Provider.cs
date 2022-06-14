@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Pulumi.Serialization;
 using Pulumi;
 
-namespace Activatedio.Pulumi.GoogleTwingate
+namespace Activatedio.GoogleTwingate
 {
     [GoogleTwingateResourceType("pulumi:providers:google-twingate")]
     public partial class Provider : Pulumi.ProviderResource
